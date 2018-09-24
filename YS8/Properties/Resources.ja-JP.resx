@@ -118,60 +118,60 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="BasicPlayTime" xml:space="preserve">
-    <value>PlayTime</value>
+    <value>プレイ時間</value>
   </data>
   <data name="BasicPlayTimeHour" xml:space="preserve">
-    <value>H</value>
+    <value>時間</value>
   </data>
   <data name="BasicPlayTimeMinute" xml:space="preserve">
-    <value>M</value>
+    <value>分</value>
   </data>
   <data name="BasicPlayTimeSecond" xml:space="preserve">
-    <value>S</value>
+    <value>秒</value>
   </data>
   <data name="MainWindowTitle" xml:space="preserve">
-    <value>YS8  SaveDataEditor(Nintendo Switch)</value>
+    <value>YS8 セーブデータ改造(Nintendo Switch)</value>
   </data>
   <data name="MeaageSaveFail" xml:space="preserve">
-    <value>Save Fail</value>
+    <value>書込失敗</value>
   </data>
   <data name="MenuAbout" xml:space="preserve">
-    <value>(_A)bout</value>
+    <value>情報</value>
   </data>
   <data name="MenuExit" xml:space="preserve">
-    <value>(_E)xit</value>
+    <value>終了</value>
   </data>
   <data name="MenuFile" xml:space="preserve">
-    <value>(_F)ile</value>
+    <value>ファイル(_F)</value>
   </data>
   <data name="MenuFileForceOpen" xml:space="preserve">
-    <value>OpenForce(_R)...</value>
+    <value>強制的に開く(_R)...</value>
   </data>
   <data name="MenuFileOpen" xml:space="preserve">
-    <value>(_O)pen...</value>
+    <value>開く(_O)...</value>
   </data>
   <data name="MenuFileSave" xml:space="preserve">
-    <value>(_S)ave</value>
+    <value>保存(_S)</value>
   </data>
   <data name="MenuFileSaveAs" xml:space="preserve">
-    <value>Save(_A)s...</value>
+    <value>名前を付けて保存(_S)...</value>
   </data>
   <data name="MessageLoadSuccess" xml:space="preserve">
-    <value>Load Success</value>
+    <value>読込成功</value>
   </data>
   <data name="MessageSaveSuccess" xml:space="preserve">
-    <value>Save Success</value>
+    <value>書込成功</value>
   </data>
   <data name="TabItemBasic" xml:space="preserve">
-    <value>Basic</value>
+    <value>基本情報</value>
   </data>
   <data name="TabItemItems" xml:space="preserve">
-    <value>Items</value>
+    <value>アイテム</value>
   </data>
   <data name="ToolTipOpen" xml:space="preserve">
-    <value>Open</value>
+    <value>開く</value>
   </data>
   <data name="ToolTipSave" xml:space="preserve">
-    <value>Save</value>
+    <value>保存</value>
   </data>
 </root>

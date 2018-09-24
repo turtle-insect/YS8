@@ -18,5 +18,40 @@ namespace YS8
 				Items.Add(new Item(item));
 			}
 		}
+
+		public uint PlayTimeHour
+		{
+			get { return SaveData.Instance().ReadNumber(0x2844, 4) / 108000; }
+			set
+			{
+				uint num = SaveData.Instance().ReadNumber(0x2844, 4);
+				num = value * 108000 + (num % 108000);
+				SaveData.Instance().WriteNumber(0x2844, 4, num);
+			}
+		}
+
+		public uint PlayTimeMinute
+		{
+			get { return SaveData.Instance().ReadNumber(0x2844, 4) / 1800 % 60; }
+			set
+			{
+				if (value > 59) value = 59;
+				uint num = SaveData.Instance().ReadNumber(0x2844, 4);
+				num = num / 108000 + value * 1800 + (num / 30 % 60) * 30;
+				SaveData.Instance().WriteNumber(0x2844, 4, num);
+			}
+		}
+
+		public uint PlayTimeSecond
+		{
+			get { return SaveData.Instance().ReadNumber(0x2844, 4) / 30 % 60; }
+			set
+			{
+				if (value > 59) value = 59;
+				uint num = SaveData.Instance().ReadNumber(0x2844, 4);
+				num = num / 1800 * 1800 + value * 30;
+				SaveData.Instance().WriteNumber(0x2844, 4, num);
+			}
+		}
 	}
 }

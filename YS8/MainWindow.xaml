@@ -32,7 +32,29 @@
             </ToolBar>
             <TabControl>
                 <TabItem Header="{x:Static properties:Resources.TabItemBasic}">
-                    
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="50"/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition Width="50"/>
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition/>
+                            <RowDefinition Height="13*"/>
+                        </Grid.RowDefinitions>
+                        <Label Content="{x:Static properties:Resources.BasicPlayTime}"/>
+                        <TextBox Grid.Column="1" Text="{Binding PlayTimeHour, UpdateSourceTrigger=PropertyChanged}"/>
+                        <TextBox Grid.Row="1" Grid.Column="1" Text="{Binding PlayTimeMinute, UpdateSourceTrigger=PropertyChanged}"/>
+                        <TextBox Grid.Row="2" Grid.Column="1" Text="{Binding PlayTimeSecond, UpdateSourceTrigger=PropertyChanged}"/>
+                        <Label Grid.Column="2" Content="{x:Static properties:Resources.BasicPlayTimeHour}"/>
+                        <Label Grid.Row="1" Grid.Column="2" Content="{x:Static properties:Resources.BasicPlayTimeMinute}"/>
+                        <Label Grid.Row="2" Grid.Column="2" Content="{x:Static properties:Resources.BasicPlayTimeSecond}"/>
+                    </Grid>
                 </TabItem>
                 <TabItem Header="{x:Static properties:Resources.TabItemItems}">
                     <ListBox ItemsSource="{Binding Items}">
@@ -45,7 +67,7 @@
                                     <Label Content="{Binding Info.Name}" Width="200"/>
                                     <CheckBox VerticalAlignment="Center" IsChecked="{Binding Look}"/>
                                     <Label Content=" Count:" Visibility="{Binding Info.isCount, Converter={StaticResource ItemCountVisibleConvertor}}"/>
-                                    <TextBox Text="{Binding Count}" Visibility="{Binding Info.isCount, Converter={StaticResource ItemCountVisibleConvertor}}" Width="30"/>
+                                    <TextBox Text="{Binding Count, UpdateSourceTrigger=PropertyChanged}" Visibility="{Binding Info.isCount, Converter={StaticResource ItemCountVisibleConvertor}}" Width="30"/>
                                 </StackPanel>
                             </DataTemplate>
                         </ListBox.ItemTemplate>

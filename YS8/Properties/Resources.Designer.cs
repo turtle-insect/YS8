@@ -61,6 +61,42 @@ namespace YS8.Properties {
         }
         
         /// <summary>
+        ///   PlayTime に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string BasicPlayTime {
+            get {
+                return ResourceManager.GetString("BasicPlayTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   H に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string BasicPlayTimeHour {
+            get {
+                return ResourceManager.GetString("BasicPlayTimeHour", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   M に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string BasicPlayTimeMinute {
+            get {
+                return ResourceManager.GetString("BasicPlayTimeMinute", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   S に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string BasicPlayTimeSecond {
+            get {
+                return ResourceManager.GetString("BasicPlayTimeSecond", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   YS8  SaveDataEditor(Nintendo Switch) に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string MainWindowTitle {

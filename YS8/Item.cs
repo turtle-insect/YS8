@@ -28,13 +28,13 @@ namespace YS8
 			}
 		}
 
-		public bool Look
+		public bool Obtain
 		{
 			get { return SaveData.Instance().ReadBit(0xC0B4 + Info.Value / 4, (Info.Value % 4) * 2); }
 			set
 			{
 				SaveData.Instance().WriteBit(0xC0B4 + Info.Value / 4, (Info.Value % 4) * 2, value);
-				PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Look)));
+				PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(nameof(Obtain)));
 			}
 		}
 	}

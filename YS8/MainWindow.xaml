@@ -65,7 +65,7 @@
                             <DataTemplate>
                                 <StackPanel Orientation="Horizontal">
                                     <Label Content="{Binding Info.Name}" Width="200"/>
-                                    <CheckBox VerticalAlignment="Center" IsChecked="{Binding Look}"/>
+                                    <CheckBox VerticalAlignment="Center" IsChecked="{Binding Obtain}"/>
                                     <Label Content=" Count:" Visibility="{Binding Info.isCount, Converter={StaticResource ItemCountVisibleConvertor}}"/>
                                     <TextBox Text="{Binding Count, UpdateSourceTrigger=PropertyChanged}" Visibility="{Binding Info.isCount, Converter={StaticResource ItemCountVisibleConvertor}}" Width="30"/>
                                 </StackPanel>

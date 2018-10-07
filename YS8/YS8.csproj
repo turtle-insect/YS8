@@ -58,11 +58,13 @@
     <Compile Include="AboutWindow.xaml.cs">
       <DependentUpon>AboutWindow.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Charactor.cs" />
     <Compile Include="DataContext.cs" />
     <Compile Include="ILineAnalysis.cs" />
     <Compile Include="Info.cs" />
     <Compile Include="Item.cs" />
     <Compile Include="ItemCountVisibleConvertor.cs" />
+    <Compile Include="ItemIDConverter.cs" />
     <Compile Include="ItemValueInfo.cs" />
     <Compile Include="Properties\Resources.ja-JP.Designer.cs">
       <AutoGen>True</AutoGen>

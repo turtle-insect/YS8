@@ -56,6 +56,54 @@
                         <Label Grid.Row="2" Grid.Column="2" Content="{x:Static properties:Resources.BasicPlayTimeSecond}"/>
                     </Grid>
                 </TabItem>
+                <TabItem Header="{x:Static properties:Resources.TabItemCharacter}">
+                    <TabItem.Resources>
+                        <local:ItemIDConverter x:Key="ItemIDConverter"/>
+                    </TabItem.Resources>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <ListBox Name="CharactorsList" ItemsSource="{Binding Charactors}" DisplayMemberPath="Name"/>
+                        <Grid Grid.Column="2">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="80"/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                                <RowDefinition Height="10*"/>
+                            </Grid.RowDefinitions>
+                            <Label Content="{x:Static properties:Resources.CharacterWeapon}"/>
+                            <ComboBox Grid.Column="1" ItemsSource="{Binding Info.Items}"
+                                      SelectedIndex="{Binding ElementName=CharactorsList, Path=SelectedItem.Weapon, Converter={StaticResource ItemIDConverter}}"
+                                      DisplayMemberPath="Name"/>
+                            <Label Grid.Row="1" Content="{x:Static properties:Resources.CharacterBody}"/>
+                            <ComboBox Grid.Column="1" Grid.Row="1" ItemsSource="{Binding Info.Items}"
+                                      SelectedIndex="{Binding ElementName=CharactorsList, Path=SelectedItem.Body, Converter={StaticResource ItemIDConverter}}"
+                                      DisplayMemberPath="Name"/>
+                            <Label Grid.Row="2" Content="{x:Static properties:Resources.CharacterArm}"/>
+                            <ComboBox Grid.Column="1" Grid.Row="2" ItemsSource="{Binding Info.Items}"
+                                      SelectedIndex="{Binding ElementName=CharactorsList, Path=SelectedItem.Arm, Converter={StaticResource ItemIDConverter}}"
+                                      DisplayMemberPath="Name"/>
+                            <Label Grid.Row="3" Content="{x:Static properties:Resources.CharacterAccesory}"/>
+                            <ComboBox Grid.Column="1" Grid.Row="3" ItemsSource="{Binding Info.Items}"
+                                      SelectedIndex="{Binding ElementName=CharactorsList, Path=SelectedItem.Accesory1, Converter={StaticResource ItemIDConverter}}"
+                                      DisplayMemberPath="Name"/>
+                            <Label Grid.Row="4" Content="{x:Static properties:Resources.CharacterAccesory}"/>
+                            <ComboBox Grid.Column="1" Grid.Row="4" ItemsSource="{Binding Info.Items}"
+                                      SelectedIndex="{Binding ElementName=CharactorsList, Path=SelectedItem.Accesory2, Converter={StaticResource ItemIDConverter}}"
+                                      DisplayMemberPath="Name"/>
+                        </Grid>
+                    </Grid>
+                </TabItem>
                 <TabItem Header="{x:Static properties:Resources.TabItemItems}">
                     <ListBox ItemsSource="{Binding Items}">
                         <ListBox.Resources>

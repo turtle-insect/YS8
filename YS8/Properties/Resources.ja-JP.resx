@@ -165,6 +165,9 @@
   <data name="TabItemBasic" xml:space="preserve">
     <value>基本情報</value>
   </data>
+  <data name="TabItemCharacter" xml:space="preserve">
+    <value>人物</value>
+  </data>
   <data name="TabItemItems" xml:space="preserve">
     <value>アイテム</value>
   </data>

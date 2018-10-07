@@ -9,13 +9,21 @@ namespace YS8
 {
 	class DataContext
 	{
+		public Info Info { get; set; } = Info.Instance();
 		public ObservableCollection<Item> Items { get; set; } = new ObservableCollection<Item>();
+		public ObservableCollection<Charactor> Charactors { get; set; } = new ObservableCollection<Charactor>();
 
 		public DataContext()
 		{
 			foreach (var item in Info.Instance().Items)
 			{
 				Items.Add(new Item(item));
+			}
+
+			String[] Names = { "Adol", "Laxia" };
+			for(uint i = 0; i < Names.Length; i++)
+			{
+				Charactors.Add(new Charactor(0x7D0 + i * 412, Names[i]));
 			}
 		}
 

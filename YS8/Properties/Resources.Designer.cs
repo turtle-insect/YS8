@@ -97,6 +97,42 @@ namespace YS8.Properties {
         }
         
         /// <summary>
+        ///   ACCESORY に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string CharacterAccesory {
+            get {
+                return ResourceManager.GetString("CharacterAccesory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   ARM に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string CharacterArm {
+            get {
+                return ResourceManager.GetString("CharacterArm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   BODY に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string CharacterBody {
+            get {
+                return ResourceManager.GetString("CharacterBody", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   WEAPON に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string CharacterWeapon {
+            get {
+                return ResourceManager.GetString("CharacterWeapon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   YS8  SaveDataEditor(Nintendo Switch) に類似しているローカライズされた文字列を検索します。
         /// </summary>
         public static string MainWindowTitle {
@@ -201,6 +237,15 @@ namespace YS8.Properties {
         public static string TabItemBasic {
             get {
                 return ResourceManager.GetString("TabItemBasic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Character に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        public static string TabItemCharacter {
+            get {
+                return ResourceManager.GetString("TabItemCharacter", resourceCulture);
             }
         }
         

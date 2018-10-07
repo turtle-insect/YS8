@@ -129,6 +129,18 @@
   <data name="BasicPlayTimeSecond" xml:space="preserve">
     <value>S</value>
   </data>
+  <data name="CharacterAccesory" xml:space="preserve">
+    <value>ACCESORY</value>
+  </data>
+  <data name="CharacterArm" xml:space="preserve">
+    <value>ARM</value>
+  </data>
+  <data name="CharacterBody" xml:space="preserve">
+    <value>BODY</value>
+  </data>
+  <data name="CharacterWeapon" xml:space="preserve">
+    <value>WEAPON</value>
+  </data>
   <data name="MainWindowTitle" xml:space="preserve">
     <value>YS8  SaveDataEditor(Nintendo Switch)</value>
   </data>
@@ -164,6 +176,9 @@
   </data>
   <data name="TabItemBasic" xml:space="preserve">
     <value>Basic</value>
+  </data>
+  <data name="TabItemCharacter" xml:space="preserve">
+    <value>Character</value>
   </data>
   <data name="TabItemItems" xml:space="preserve">
     <value>Items</value>

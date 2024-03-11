@@ -1,3 +1,5 @@
+![DL Count](https://img.shields.io/github/downloads/turtle-insect/YS8/total.svg)
+
 # 概要
 Switch YS8(イース8)のセーブデータ編集Tool
 
